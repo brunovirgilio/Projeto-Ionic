@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Salário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='outer-content'>
+  <ion-input id='remuneracao'>Digite a remuneração(hora): </ion-input>
+  <ion-input id='horas'>Digite a carga horária(mês): </ion-input>
+  <ion-button (click)="Enviar()">Enviar</ion-button><br>
+  <ion-label>O seu salário bruto (R$): </ion-label>
+  <ion-label id='resp-bruto'></ion-label><br>
+  <ion-label>O desconto no INSS (R$): </ion-label>
+  <ion-label id='resp-inss'></ion-label><br>
+  <ion-label>O desconto sindical (R$): </ion-label>
+  <ion-label id='resp-sindicato'></ion-label><br>
+  <ion-label>O seu salário liquido (R$): </ion-label>
+  <ion-label id='resp-liquido'></ion-label>
+
+</ion-content>
